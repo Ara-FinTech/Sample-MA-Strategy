@@ -63,7 +63,7 @@ except urllib.error.HTTPError as e:
 
 
 #Strategy Start
-
+#Calculate different SMA and Max and Min of SMA over a given period.
 SMA30 = pd.DataFrame()
 SMA30['Price'] = GBP_JPY['Close'].rolling(window=30).mean()
 SMA30
